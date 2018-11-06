@@ -5,11 +5,11 @@
 class Stack
 {
 public:
-    bool empty();
-    int size();
-    Node* top();
-    void push();
-    void pop(int value);
+    bool empty() const;
+    int size() const;
+    Node* top() const;
+    void push(int value);
+    void pop();
 
     Stack() = default;
     ~Stack() = default;

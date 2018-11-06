@@ -1,7 +1,13 @@
 #include <iostream>
+#include <stackMenu.hpp>
+
+
+
 
 int main()
 {
-    std::cout << "Hello, World!" << std::endl;
+    stackMenu();
+
+
     return 0;
 }
