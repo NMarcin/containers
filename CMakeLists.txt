@@ -3,4 +3,4 @@ project(containers)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(containers main.cpp)
+add_executable(containers main.cpp stack/Node.cpp stack/Node.hpp stack/Stack.cpp stack/Stack.hpp)
