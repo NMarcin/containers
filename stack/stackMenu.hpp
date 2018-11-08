@@ -1,3 +1,4 @@
+#pragma once
 #include <Stack.hpp>
 #include <iostream>
 
@@ -49,7 +50,4 @@ void stackMenu()
         std::cin >> option;
         std::cin.get();
     }
-
-
-
 }
