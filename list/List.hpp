@@ -13,7 +13,6 @@ public:
     void insert(int value, NodeList* position);
     void push_back(int value);
     void push_front(int value);
-    NodeList* erase();
     void pop_back();
     void pop_front();
 
@@ -21,8 +20,8 @@ public:
     ~List() = default;
 
 private:
-    NodeList* front_;
-    NodeList* back_;
+    NodeList* front_= nullptr;
+    NodeList* back_=front_;
 
 };
 
