@@ -1,11 +1,14 @@
 #pragma once
 
 
-class NodeList : public Node
+class NodeList
 {
 public:
     NodeList* getPreviousNode() const;
     NodeList* setPreviousNode(NodeList* previousNode);
+    int getValue() const;
+    NodeList* getNextNode() const;
+    NodeList* setNextNode(NodeList* nextNode);
 
     NodeList(int value, NodeList* nextNode, NodeList* previousNode);
     ~NodeList() = default;
@@ -18,5 +21,7 @@ public:
 private:
     int value_;
     NodeList* nextNode_;
-};
+    NodeList* previousNode_;
+
+    };
 
